@@ -1,0 +1,91 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage[scale=0.915]{geometry}
+\usepackage{import}
+\usepackage{multicol}
+\usepackage{import}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{tabularx}
+
+\name{Thiago}{Roberto}
+\newcommand*{\customcventry}[7][.13em]{
+\begin{tabular}{@{}l}
+{\bfseries #4} \
+{\itshape #3}
+\end{tabular}
+\hfill
+\begin{tabular}{l@{}}
+{\bfseries #5} \
+{\itshape #2}
+\end{tabular}
+\ifx&#7&%
+\else{\
+\begin{minipage}{\maincolumnwidth}%
+\small#7%
+\end{minipage}}\fi%
+\par\addvspace{#1}}
+\begin{document}
+\makecvtitle
+\vspace*{-16mm}
+\begin{center}\textbf{Fullstack Software Engineer}\end{center}
+\begin{center}
+\vspace{-0.3cm}
+\begin{tabular}{c c c}
+    \faMobile\hspace{0.1cm} 31971605029 \hspace{0.2cm} & \faEnvelope\hspace{0.1cm} \href{mailto:thiagorobertodc@outlook.com}{thiagorobertodc@outlook.com} \hspace{0.2cm} & \faHome\hspace{0.1cm} Belo Horizonte, Brazil \\
+    \multicolumn{3}{c}{\faLinkedin\hspace{0.1cm} \href{https://www.linkedin.com/in/thiagorobertodc23/}{linkedin.com/in/thiago} \quad
+    \faGithub\hspace{0.1cm} \href{https://github.com/thiagorobertodc}{github.com/thiago}}
+\end{tabular}
+\end{center}
+
+\section{Experience}
+\customcventry{Apr/2022 ‐ present}{{Nursa}}{Fullstack Software Engineer}{Salt Lake City, UT, USA (remote)}{}{
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\vspace{+0.1cm}\item Engaged in Nursa's payment module, helped build a robust instant payment system creating, testing and maintaning \textbf{API RESTful endpoints}. Code covered by \textbf{unit and integration tests with Jest}.
+\item Mobile application features for the Shift Reports and Billing and Payments modules. Frontend with \textbf{Angular} and \textbf{React}. Backend with \textbf{Java}, \textbf{Spring Boot}, \textbf{Node.js} (Express.js) and \textbf{Nest.js}.
+\item Developed a feature that improved the time to complete the Controlled Public Health Document (CDPH 530) by \textbf{200\%}, significantly reducing the time to allocate nursing staff to healthcare facilities.
+\item Created a feature for daylight saving time transitions, ensuring that medical reports accurately reflect shift hours and preventing shifts from starting or ending during these transitions.
+\end{itemize}}}
+
+\vspace{+0.3cm}\customcventry{Aug/21 ‐ Apr/22}{{dti digital}}{Fullstack Software Engineer}{São Paulo, Brazil}{}{
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\vspace{+0.1cm}\item Developed a \textbf{web application} using \textbf{React.js} to manage documents and files related to iron mining structure extraction and maintenance.
+\vspace{-0.1cm}\item Developed and maintained \textbf{endpoints} using \textbf{Java (Spring Boot)} and a Backend For Frontend (BFF). Managed a \textbf{NoSQL database} with \textbf{DynamoDB}. Ensured code coverage with \textbf{JaCoCo} and quality with \textbf{SonarCloud}.
+\end{itemize}}}
+
+\vspace{+0.3cm}\customcventry{Apr/21 ‐ Aug/21}{{Usemobile}}{Mobile Software Engineer}{Ouro Preto, MG, Brazil}{}{
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Developed \textbf{mobile applications} using \textbf{Flutter} and \textbf{React.js}, participating in decision-making processes and proposing ideas to consistently deliver product value.
+\end{itemize}}}
+
+\vspace{+0.2cm}\customcventry{Nov/19 ‐ Apr/21}{{dreamlabs}}{Mobile Development Intern}{Ouro Preto, MG, Brazil}{}{
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\vspace{+0.1cm}\item Developed various \textbf{mobile applications} at a software consultancy. As my first role in software engineering, I learned the fundamentals of programming tools and design patterns.
+\vspace{+0.1cm}\item Applications developed using \textbf{React.js}.
+\end{itemize}}}
+
+\section{Education}
+\customcventry{2016-2022}{Federal University of Ouro Preto}{Bachelor’s in Computer Science}{Ouro Preto, MG, Brazil}{}{}
+
+\section{Skills and Tools}
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\vspace{+0.05cm}\item Version control with \textbf{Git}.
+\vspace{+0.05cm}\item \textbf{Fluent communication in English}.
+\vspace{+0.05cm}\item Backend: \textbf{Nest.js}, \textbf{Node.js}, \textbf{Java (Spring Boot)};
+\vspace{+0.05cm}\item Frontend: \textbf{Angular}, \textbf{Ionic} and \textbf{React.js}. 
+\vspace{+0.05cm}\item \textbf{Unit and integration testing} with \textbf{Jest}; coverage and quality with \textbf{SonarCloud}.
+\vspace{+0.05cm}\item Secret key and value management in \textbf{AWS}.
+\vspace{+0.05cm}\item \textbf{Azure DevOps} and \textbf{GitHub Actions} for application lifecycle management.
+\vspace{+0.05cm}\item \textbf{RabbitMQ topics} and cron jobs for recurring events.
+\vspace{+0.05cm}\item \textbf{Feature flags} for gradual releases.
+\vspace{+0.05cm}\item \textbf{Docker} for application containerization to enhance development performance.
+\vspace{+0.05cm}\item \textbf{DataDog} for log and metrics monitoring.
+\vspace{+0.05cm}\item \textbf{PagerDuty} for support tickets.
+\end{itemize}
+
+\end{document}
